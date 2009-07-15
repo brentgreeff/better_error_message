@@ -1,0 +1,16 @@
+BetterErrorMessage
+==================
+
+Better error message for Ruby on Rails.
+Use instead of Rails error_message_on()
+
+Example
+=======
+
+better_error_message :dd, @user, :first_name
+
+or
+
+better_error_message :p, @user, [:first_name, :last_name]
+
+Copyright (c) 2009 [Brent Greeff], released under the MIT license
