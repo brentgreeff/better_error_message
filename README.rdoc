@@ -1,4 +1,4 @@
-= BetterErrorMessage
+= Better Error Message
 
 Better error message for Ruby on Rails.
 Use instead of Rails error_message_on()
