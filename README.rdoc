@@ -3,6 +3,8 @@
 Better error message for Ruby on Rails.
 Use instead of Rails error_message_on()
 
+will return the first error message for the specified field.
+
 == Example
 
       better_error_message :dd, @user, :first_name
