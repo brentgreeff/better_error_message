@@ -29,5 +29,6 @@ module BetterErrorMessage
       return errors
     end
   end
-  
 end
+
+ActionView::Base.send :include, BetterErrorMessage
