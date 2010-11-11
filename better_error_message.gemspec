@@ -1,10 +1,10 @@
 Gem::Specification.new do |s|
   s.name = %q{better_error_message}
-  s.version = "2.0.0"
+  s.version = "3.0.0"
   
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Brent Greeff"]
-  s.date = %q{2010-10-30}
+  s.date = %q{2010-11-11}
   s.description = %q{Better error message for Ruby on Rails. Use instead of Rails error_message_on}
   s.email = %q{email@brentgreeff.com}
   s.extra_rdoc_files = [
