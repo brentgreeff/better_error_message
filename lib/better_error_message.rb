@@ -5,14 +5,14 @@ module BetterErrorMessage
     
     if fields.is_a?(Array)
       fields.each do |field|
-        errors = model.errors.on(field)
+        errors = model.errors[field]
         next if errors.nil?
         error = get_first_validation_error(errors)
         return content_tag tag, error, :class => 'validation_error' unless error.blank?
       end
     else
       field = fields
-      errors = model.errors.on(field)
+      errors = model.errors[field]
       error = get_first_validation_error(errors)
       return content_tag tag, error, :class => 'validation_error' unless error.blank?
     end
@@ -24,7 +24,13 @@ module BetterErrorMessage
   
   def get_first_validation_error(errors)
     if errors.is_a?(Array)
-      return errors.first
+      first = errors.first
+      
+      if first.is_a?(Array)
+        first.first
+      else
+        first
+      end
     else
       return errors
     end
