@@ -5,7 +5,7 @@ Use instead of Rails error_message_on()
 
 == Install
 
-gem install better_error_message
+      gem install better_error_message
 
 
 * will return the first error message for the specified field.
