@@ -3,7 +3,12 @@
 Better error message for Ruby on Rails.
 Use instead of Rails error_message_on()
 
-will return the first error message for the specified field.
+== Install
+
+gem install better_error_message
+
+
+* will return the first error message for the specified field.
 
 == Example
 
