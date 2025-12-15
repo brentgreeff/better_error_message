@@ -1,0 +1,24 @@
+> [!CAUTION]
+> This repository is deprecated and no longer maintained.
+
+= Better Error Message
+
+Better error message for Ruby on Rails.
+Use instead of Rails error_message_on()
+
+== Install
+
+      gem install better_error_message
+
+
+== Example
+
+      better_error_message :dd, @user, :first_name
+
+or
+
+      better_error_message :p, @user, [:first_name, :last_name]
+
+* will return the first error message for the specified field.
+
+Copyright (c) 2009 [Brent Greeff], released under the MIT license
