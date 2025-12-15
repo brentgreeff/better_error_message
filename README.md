@@ -1,7 +1,7 @@
-> [!CAUTION]
+> [\!CAUTION]
 > This repository is deprecated and no longer maintained.
 
-= Better Error Message
+# Better Error Message
 
 Better error message for Ruby on Rails. Use instead of Rails
 error_message_on()
